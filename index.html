@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxime Ganier | Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans antialiased selection:bg-stone-200">
+
+    <header class="max-w-4xl mx-auto px-6 py-12 flex justify-between items-center">
+        <span class="font-mono text-sm tracking-widest uppercase font-bold text-stone-500">MG . PROJECTS</span>
+        <div class="space-x-6 text-sm font-medium">
+            <a href="#about" class="hover:text-stone-500 transition-colors">À propos</a>
+            <a href="#projects" class="hover:text-stone-500 transition-colors">Projets</a>
+            <a href="https://github.com/Ganmaxxx" target="_blank" class="hover:text-stone-500 transition-colors"><i class="fab fa-github text-lg"></i></a>
+        </div>
+    </header>
+
+    <section id="about" class="max-w-4xl mx-auto px-6 py-12 md:py-20">
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6 text-stone-900">
+            Maxime Ganier
+        </h1>
+        <p class="text-xl text-stone-600 leading-relaxed max-w-2xl">
+            Élève-ingénieur passionné par le <span class="text-stone-900 font-semibold">Deep Learning</span> appliqué à la mécanique des fluides expérimentale et au traitement de données physiques complexes.
+        </p>
+    </section>
+
+    <section id="projects" class="max-w-4xl mx-auto px-6 py-16 border-t border-stone-200">
+        <h2 class="text-xs font-mono tracking-widest uppercase text-stone-400 mb-12">Projets Sélectionnés</h2>
+        
+        <div class="space-y-16">
+            <article class="grid md:grid-cols-3 gap-6 md:gap-12 group">
+                <div class="md:col-span-1">
+                    <span class="text-xs font-mono text-stone-400">01 / DEEP LEARNING</span>
+                </div>
+                <div class="md:col-span-2">
+                    <h3 class="text-xl font-bold text-stone-900 mb-3 group-hover:text-stone-600 transition-colors">
+                        <a href="https://github.com/Ganmaxxx/blind-autoencoder-fluid-denoising" target="_blank" class="inline-flex items-center gap-2">
+                            Blind Autoencoder for Fluid Denoising
+                            <i class="fas fa-arrow-up-right text-xs opacity-50 group-hover:opacity-100 transition-opacity"></i>
+                        </a>
+                    </h3>
+                    <p class="text-stone-600 leading-relaxed mb-6">
+                        Développement sous PyTorch d'un pipeline d'autoencodeur convolutif avec mécanismes d'attention (Squeeze-and-Excitation) dédié au débruitage aveugle de champs cinématiques de fluides. Inclus des outils analytiques d'optimisation de convergence et des scripts d'inférence avec interface graphique.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-stone-200/60 rounded text-xs font-medium text-stone-700">PyTorch</span>
+                        <span class="px-3 py-1 bg-stone-200/60 rounded text-xs font-medium text-stone-700">Computer Vision</span>
+                        <span class="px-3 py-1 bg-stone-200/60 rounded text-xs font-medium text-stone-700">NumPy / Pandas</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer class="max-w-4xl mx-auto px-6 py-16 border-t border-stone-200 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-xs text-stone-400">&copy; 2026 Maxime Ganier. Conçu de manière minimaliste.</p>
+        <div class="flex space-x-6 text-xs text-stone-500 font-medium">
+            <a href="https://github.com/Ganmaxxx" target="_blank" class="hover:text-stone-900 transition-colors">GitHub</a>
+        </div>
+    </footer>
+
+</body>
+</html>
